@@ -2,6 +2,10 @@ body {
 	color: red;
 }
 
+
+
+$mainWhite: rgba(255, 255, 255, 0.9);
+
 @mixin stickyback {
 	background-position: center center;
 	background-attachment: fixed;
@@ -9,7 +13,14 @@ body {
     background-size: cover;
     background-position: 50%;
     box-sizing: border-box;
+}
 
+@mixin vertical {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .pattern {
@@ -20,33 +31,48 @@ body {
 #about {
 	@include stickyback;
 	padding: 50px;
-	background-image: url(../img/lines3.png);
+	color: $mainWhite;
+	background-color: rgba(26,188,156,1);
 		.content {
 		padding: 20px;
-		background-color: white;
+		border-style: solid;
+		border-width: 10px;
+		border-color: $mainWhite;
+	}
+	.fa {
+	color: $mainWhite;
+	margin: 0 10px 0 10px;
 	}
 }
 
 .mini {
-	/* margin: 0 0 4vh 0; */
+	/* border-color: rgba(255, 255, 255, 0.9); margin: 0 0 4vh 0; */
+	height: 135px;
 }
 
 #container2 {
-	height: 100%;
+
 }
 
 #bio {
-	height: 100%;
+	height: 300px;
+	margin-bottom: 30px;
+	.text {
+		@include vertical;
+	}
 }
 
 #contact {
-	margin-bottom: 4%;
-	height: 48%;
-
-
+	margin-bottom: 30px;
+	p {
+		@include vertical;
+	}
 }
+
 #other {
-	height: 48%;
+	p {
+		@include vertical;
+	}
 }
 
 #p1 {
@@ -138,8 +164,7 @@ body {
 };
 
 #p23 {
-	background-image: url(../img/squares2.png);
-};
+	background-image: url(../img/squares2.png);};
 
 #p24 {
 	background-image: url(../img/hexdots.png);
