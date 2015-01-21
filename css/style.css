@@ -1,5 +1,26 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,900,300italic);
+@import url(http://fonts.googleapis.com/css?family=Arapey:400italic);
+html {
+  height: 100%;
+  min-height: 100%; }
+
 body {
-  color: red; }
+  min-height: 100%;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Lato', sans-serif; }
+
+h1 {
+  font-weight: 900;
+  font-size: 3.5em;
+  line-height: 1em;
+  margin: 10px; }
+
+h2 {
+  font-family: 'Arapey', serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2.5em;
+  margin: 0; }
 
 .pattern {
   height: 100vh;
@@ -18,20 +39,22 @@ body {
   background-position: 50%;
   box-sizing: border-box;
   padding: 50px;
-  color: rgba(255, 255, 255, 0.9);
   background-color: #1abc9c; }
   #about .content {
     padding: 20px;
     border-style: solid;
     border-width: 10px;
-    border-color: rgba(255, 255, 255, 0.9); }
-  #about .fa {
-    color: rgba(255, 255, 255, 0.9);
-    margin: 0 10px 0 10px; }
+    border-color: rgba(255, 255, 255, 0.7); }
 
 .mini {
   /* border-color: rgba(255, 255, 255, 0.9); margin: 0 0 4vh 0; */
   height: 135px; }
+
+#container2 p {
+  text-align: center; }
+  #container2 p .fa {
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0 10px 0 10px; }
 
 #bio {
   height: 300px;
@@ -60,7 +83,21 @@ body {
   transform: translateY(-50%); }
 
 #p1 {
-  background-image: url(../img/70s.png); }
+  background-image: url(../img/lines3.png);
+  padding: 20%;
+  color: white; }
+  #p1 #welcome {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 20px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: rgba(255, 255, 255, 0.7);
+    padding: 50px 30px 50px 30px;
+    text-align: center; }
 
 #p2 {
   background-image: url(../img/Booze-Goggles.png); }
@@ -90,7 +127,7 @@ body {
   background-image: url(../img/linez.png); }
 
 #p11 {
-  background-image: url(../img/lines3.png); }
+  background-image: url(../img/70s.png); }
 
 #p12 {
   background-image: url(../img/lines.png); }

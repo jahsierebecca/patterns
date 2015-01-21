@@ -1,10 +1,7 @@
-body {
-	color: red;
-}
+@import url(http://fonts.googleapis.com/css?family=Lato:400,900,300italic);
+@import url(http://fonts.googleapis.com/css?family=Arapey:400italic);
 
-
-
-$mainWhite: rgba(255, 255, 255, 0.9);
+$mainWhite: rgba(255, 255, 255, 0.7);
 
 @mixin stickyback {
 	background-position: center center;
@@ -15,12 +12,46 @@ $mainWhite: rgba(255, 255, 255, 0.9);
     box-sizing: border-box;
 }
 
+@mixin boxStyle {
+	padding: 20px;
+	border-style: solid;
+	border-width: 10px;
+	border-color: $mainWhite;
+}
+
 @mixin vertical {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+html{
+     height:100%;
+     min-height:100%;
+     }
+
+body{
+     min-height:100%;
+     color: $mainWhite;
+     font-family: 'Lato', sans-serif;
+     }
+
+h1 {
+	font-weight: 900;
+	font-size: 3.5em;
+	line-height: 1em;
+	margin: 10px;
+}     
+
+h2 {
+	font-family: 'Arapey', serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 2.5em;
+	margin: 0;
+
 }
 
 .pattern {
@@ -30,18 +61,9 @@ $mainWhite: rgba(255, 255, 255, 0.9);
 
 #about {
 	@include stickyback;
-	padding: 50px;
-	color: $mainWhite;
-	background-color: rgba(26,188,156,1);
+	padding: 50px;	background-color: rgba(26,188,156,1);
 		.content {
-		padding: 20px;
-		border-style: solid;
-		border-width: 10px;
-		border-color: $mainWhite;
-	}
-	.fa {
-	color: $mainWhite;
-	margin: 0 10px 0 10px;
+		@include boxStyle;
 	}
 }
 
@@ -51,7 +73,13 @@ $mainWhite: rgba(255, 255, 255, 0.9);
 }
 
 #container2 {
-
+	p {
+		text-align: center;
+		.fa {
+			color: $mainWhite;
+			margin: 0 10px 0 10px;
+		}
+	}	
 }
 
 #bio {
@@ -76,7 +104,15 @@ $mainWhite: rgba(255, 255, 255, 0.9);
 }
 
 #p1 {
-	background-image: url(../img/70s.png);
+	background-image: url(../img/lines3.png);
+	padding: 20%;
+	color: white;
+	#welcome { 
+		@include vertical;
+		@include boxStyle;
+		padding: 50px 30px 50px 30px;
+		text-align: center;
+	}
 };
 
 #p2 {
@@ -116,7 +152,7 @@ $mainWhite: rgba(255, 255, 255, 0.9);
 };
 
 #p11 {
-	background-image: url(../img/lines3.png);
+	background-image: url(../img/70s.png);
 };
 
 #p12 {
