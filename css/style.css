@@ -1,0 +1,123 @@
+body {
+  color: red; }
+
+.pattern {
+  height: 100vh;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  box-sizing: border-box; }
+
+#about {
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  box-sizing: border-box;
+  padding: 50px;
+  background-image: url(../img/lines3.png); }
+  #about .content {
+    padding: 20px;
+    background-color: white; }
+
+.mini {
+  /* margin: 0 0 4vh 0; */ }
+
+#container2 {
+  height: 100%; }
+
+#bio {
+  height: 100%; }
+
+#contact {
+  margin-bottom: 4%;
+  height: 48%; }
+
+#other {
+  height: 48%; }
+
+#p1 {
+  background-image: url(../img/70s.png); }
+
+#p2 {
+  background-image: url(../img/Booze-Goggles.png); }
+
+#p3 {
+  background-image: url(../img/Citrus.png); }
+
+#p4 {
+  background-image: url(../img/City-Pattern.png); }
+
+#p5 {
+  background-image: url(../img/Rain.png); }
+
+#p6 {
+  background-image: url(../img/Wheat-Pattern.png); }
+
+#p7 {
+  background-image: url(../img/Trees.png); }
+
+#p8 {
+  background-image: url(../img/Wood.png); }
+
+#p9 {
+  background-image: url(../img/sea.png); }
+
+#p10 {
+  background-image: url(../img/linez.png); }
+
+#p11 {
+  background-image: url(../img/lines3.png); }
+
+#p12 {
+  background-image: url(../img/lines.png); }
+
+#p13 {
+  background-image: url(../img/lines2.png); }
+
+#p14 {
+  background-image: url(../img/hex.png); }
+
+#p15 {
+  background-image: url(../img/hexSea.png); }
+
+#p16 {
+  background-image: url(../img/linegeo.png); }
+
+#p17 {
+  background-image: url(../img/newhex.png); }
+
+#p18 {
+  background-image: url(../img/newhex2.png); }
+
+#p19 {
+  background-image: url(../img/orangehex.png); }
+
+#p20 {
+  background-image: url(../img/Orangey-Square2.png); }
+
+#p21 {
+  background-image: url(../img/pseudochevron.png); }
+
+#p22 {
+  background-image: url(../img/squares.png); }
+
+#p23 {
+  background-image: url(../img/squares2.png); }
+
+#p24 {
+  background-image: url(../img/hexdots.png); }
+
+#p25 {
+  background-image: url(../img/Weird.png); }
+
+#p26 {
+  background-image: url(../img/geo2.png); }
+
+#p27 {
+  background-image: url(../img/envelopes.png); }
+
+/*# sourceMappingURL=style.css.map */
