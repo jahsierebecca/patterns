@@ -1,19 +1,31 @@
+$mainWhite: rgba(255, 255, 255, 0.7);
+
+html{
+     height:100%;
+     min-height:100%;
+     }
+
+body{
+     min-height:100%;
+     color: $mainWhite;
+     font-family: 'Lato', sans-serif;
+     }
+
 @import url(http://fonts.googleapis.com/css?family=Lato:400,900,300italic);
 @import url(http://fonts.googleapis.com/css?family=Arapey:400italic);
 
-$mainWhite: rgba(255, 255, 255, 0.7);
 
 @mixin stickyback {
 	background-position: center center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
     background-size: cover;
-    background-position: 50%;
-    box-sizing: border-box;
 }
 
 @mixin boxStyle {
-	padding: 20px;
 	border-style: solid;
 	border-width: 10px;
 	border-color: $mainWhite;
@@ -26,17 +38,6 @@ $mainWhite: rgba(255, 255, 255, 0.7);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-
-html{
-     height:100%;
-     min-height:100%;
-     }
-
-body{
-     min-height:100%;
-     color: $mainWhite;
-     font-family: 'Lato', sans-serif;
-     }
 
 h1 {
 	font-weight: 900;
@@ -59,17 +60,26 @@ h2 {
 	@include stickyback;
 }
 
+#theWrapper {
+
+}
+
 #about {
 	@include stickyback;
-	padding: 50px;	background-color: rgba(26,188,156,1);
+	background-color: rgba(26,188,156,1);
+	padding: 50px;	
 		.content {
 		@include boxStyle;
+		#bio {
+			padding: 50px;
+		}
 	}
 }
 
 .mini {
 	/* border-color: rgba(255, 255, 255, 0.9); margin: 0 0 4vh 0; */
 	height: 135px;
+	padding: 20px;
 }
 
 #container2 {
@@ -83,10 +93,15 @@ h2 {
 }
 
 #bio {
+	padding: 40px;
 	height: 300px;
 	margin-bottom: 30px;
+	max-width: 700px;
 	.text {
 		@include vertical;
+	}
+	p {
+		font-size: 1.2em;
 	}
 }
 
@@ -218,5 +233,12 @@ h2 {
 	background-image: url(../img/envelopes.png);
 };
 
-
+@media screen and (max-width: 350px) {
+	h1 {
+		font-size: 2em;
+	}
+	h2 {
+		font-size: 2em;
+	}
+}
 
