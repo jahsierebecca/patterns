@@ -1,5 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,900,300italic);
 @import url(http://fonts.googleapis.com/css?family=Arapey:400italic);
+@media screen and (max-width: 400px) {
+  .pattern {
+    height: 100%; } }
 html {
   height: 100%;
   min-height: 100%; }
@@ -184,11 +187,26 @@ h2 {
 #p27 {
   background-image: url(../img/envelopes.png); }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
+  #about {
+    padding: 20px; }
+
   h1 {
     font-size: 2em; }
 
   h2 {
-    font-size: 2em; } }
+    font-size: 1.5em;
+    line-height: 1.9em; }
+
+  #bio {
+    padding: 20px; }
+    #bio p {
+      font-size: 1em; }
+
+  #mini {
+    padding: 10px; }
+
+  #container2 p .fa {
+    margin: 0 5px 0 5px; } }
 
 /*# sourceMappingURL=style.css.map */

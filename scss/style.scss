@@ -1,3 +1,9 @@
+@media screen and (max-width: 400px) {
+	.pattern {
+		height: 100%;
+	}
+}
+
 $mainWhite: rgba(255, 255, 255, 0.7);
 
 html{
@@ -233,12 +239,32 @@ h2 {
 	background-image: url(../img/envelopes.png);
 };
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
+	#about {
+		padding: 20px;
+	}
 	h1 {
 		font-size: 2em;
 	}
 	h2 {
-		font-size: 2em;
+		font-size: 1.5em;
+		line-height: 1.9em;
 	}
+	#bio {
+	padding: 20px;	
+	p {
+		font-size: 1em;
+	}
+}
+	#mini {
+		padding: 10px;
+	}
+	#container2 {
+		p {
+		.fa {
+		margin: 0 5px 0 5px;
+	}
+}
+}
 }
 
