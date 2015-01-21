@@ -2,7 +2,8 @@
 @import url(http://fonts.googleapis.com/css?family=Arapey:400italic);
 @media screen and (max-width: 400px) {
   .pattern {
-    height: 100%; } }
+    height: 100%;
+    max-width: 100%; } }
 html {
   height: 100%;
   min-height: 100%; }
@@ -27,6 +28,7 @@ h2 {
 
 .pattern {
   height: 100vh;
+  width: 100%;
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -199,12 +201,12 @@ h2 {
     line-height: 1.9em; }
 
   #bio {
-    padding: 20px; }
+    padding: 30px; }
     #bio p {
       font-size: 1em; }
 
   #mini {
-    padding: 10px; }
+    padding: 30px; }
 
   #container2 p .fa {
     margin: 0 5px 0 5px; } }
